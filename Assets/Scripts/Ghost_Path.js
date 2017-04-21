@@ -4,6 +4,7 @@ var waypoint : Transform[]; //# of waypoints
 var speed : float = 0.2; //Speed
 var current : int = 0; //Current Waypoint
 var reachDist : float = 0.1f; //Distance between object and waypoint
+var direction : float = 0;
 private var ghost: CharacterController;
 
 function Start () {

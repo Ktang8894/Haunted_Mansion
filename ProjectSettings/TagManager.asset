@@ -7,6 +7,11 @@ TagManager:
   - Key
   - Door
   - teleporter
+  - Boulder
+  - Door2
+  - Door2
+  - Door3
+  - BoulderDoor
   layers:
   - Default
   - TransparentFX
@@ -16,8 +21,8 @@ TagManager:
   - UI
   - 
   - 
+  - Maze
   - Background
-  - 
   - 
   - 
   - 

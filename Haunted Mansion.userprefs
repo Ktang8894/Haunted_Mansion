@@ -1,15 +1,17 @@
 ﻿<Properties StartupItem="Assembly-UnityScript.unityproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Ghost_Path.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Ghost_Animation.js">
     <Files>
-      <File FileName="Assets\Scripts\teleport_person.js" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\teleport_person.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraFade.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\keySpawn.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Menu.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player_Movement.js" Line="71" Column="1" />
+      <File FileName="Assets\Scripts\Player_Movement.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Reset_Level.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Ghost_Path.js" Line="26" Column="1" />
-      <File FileName="Assets\Scripts\Ghost_Trigger.js" Line="9" Column="21" />
+      <File FileName="Assets\Scripts\Ghost_Path.js" Line="35" Column="3" />
+      <File FileName="Assets\Scripts\Ghost_Trigger.js" Line="1" Column="1" />
+      <File FileName="Assets\Levels\BoulderLevel\BoulderDelete.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Ghost_Animation.js" Line="10" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

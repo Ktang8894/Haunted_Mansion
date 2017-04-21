@@ -8,9 +8,6 @@ function OnLevelWasLoaded()
 {
 	var index : int = getRandomValue();
 	transform.position =  new Vector2(xpos[index],ypos[index]);
-	var audio :  AudioSource = GetComponent.<AudioSource>();
-	audio.Play();
-	audio.Play(44100);
 };
 
 

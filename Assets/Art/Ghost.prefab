@@ -85,6 +85,7 @@ MonoBehaviour:
   speed: 1.8
   current: 0
   reachDist: 0.1
+  direction: 0
 --- !u!114 &114934293246860570
 MonoBehaviour:
   m_ObjectHideFlags: 1
