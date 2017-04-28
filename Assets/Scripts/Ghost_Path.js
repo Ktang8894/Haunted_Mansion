@@ -4,11 +4,16 @@ var waypoint : Transform[]; //# of waypoints
 var speed : float = 0.2; //Speed
 var current : int = 0; //Current Waypoint
 var reachDist : float = 0.1f; //Distance between object and waypoint
-var direction : float = 0;
 private var ghost: CharacterController;
+
+var anim : Animator;
+var dir = 0.0;
+var rb : Rigidbody2D;
 
 function Start () {
 	ghost = GetComponent(CharacterController);
+	anim = GetComponent("Animator");   	
+	rb = GetComponent.<Rigidbody2D>();
 
 	//Setting the waypoints for the prefab using a for loop wasn't working 
 	//for some reason... brute forcing it for now :(
@@ -33,4 +38,14 @@ function Update () {
 	if (distance < reachDist) { //Waypoint reached
 		current++;
 	}
+
+	if (current == 0 || current == 3 || current == 4 || current >= 7){
+		dir = 1;		 
+	}
+	else if (current == 1 || current == 2 || current == 5 || current == 6){
+		dir = -1;
+		//print("left");
+	}
+
+	anim.SetFloat("dir", dir);
 }

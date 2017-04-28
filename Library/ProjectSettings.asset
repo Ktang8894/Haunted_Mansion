@@ -463,6 +463,8 @@ PlayerSettings:
   cloudServicesEnabled:
     Build: 1
     Collab: 1
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   cloudProjectId: 0d643c8e-31fe-4a63-9c91-a03373a2d343
   projectName: Haunted Mansion

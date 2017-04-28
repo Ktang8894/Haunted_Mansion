@@ -1,12 +1,20 @@
 ﻿#pragma strict
 
-var newSprite : Sprite;
- 
+var anim : Animator;
+var dir = 0.0;
+
 function Start () {
-    
+    anim = GetComponent("Animator");   	
 }
 
 function Update() {
-	newSprite = Resources.Load("Ghost Left", typeof(Sprite)) as Sprite;
-	GetComponent(SpriteRenderer).sprite = newSprite;
+
+	if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)){
+		dir = 1;		 
+	}
+	else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)){
+		dir = -1;
+		//print("left");
+	}
+	anim.SetFloat("dir", dir);
 }

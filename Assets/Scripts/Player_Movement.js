@@ -8,11 +8,7 @@ var moving = 0.0;
 var key = 0;
 var vicinity= false;
 var exit = false;
-var exit2 = false;
-var exit3 = false;
 var scene: String;
-var scene2: String;
-var scene3: String;
 
 
 function Start() {
@@ -35,13 +31,6 @@ function OnCollisionEnter2D(coll: Collision2D) {
 		exit = true;
 	}
 
-	else if(coll.gameObject.tag == "Door2"){ 
-		exit2 = true;
-	}
-
-	else if(coll.gameObject.tag == "Door3"){ 
-		exit3 = true;
-	}
 }
 
 //Colliders leaving vicinity
@@ -81,18 +70,6 @@ function FixedUpdate () {
 			Destroy(GameObject.FindWithTag("Door"));
 			Debug.Log("NEXT LEVEL");
 			Application.LoadLevel(scene);
-		}
-		else if(exit2 && key){
-			Destroy(GameObject.FindWithTag("Door2"));
-			Debug.Log("NEXT LEVEL");
-
-			Application.LoadLevel(scene2);
-		}
-		else if(exit3 && key){
-			Destroy(GameObject.FindWithTag("Door3"));
-			Debug.Log("NEXT LEVEL");
-
-			Application.LoadLevel(scene3);
 		}
 
     }

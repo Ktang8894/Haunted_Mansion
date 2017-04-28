@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Boulder Level.unity
+- path: Assets/Invisible Floor Level.unity
   isLoaded: 1
   isActive: 1
