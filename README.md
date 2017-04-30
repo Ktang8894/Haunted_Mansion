@@ -10,10 +10,10 @@ Unity must be installed and the user needs an active Unity account. The game can
 
 * **Kevin Tang** - *Game art, animations, Invisible Floor Level* - [Ktang8894](https://github.com/Ktang8894)
 * **Daniel Doyle** - *Audio, object collision, Maze Level* - [ddoyle2017](https://github.com/ddoyle2017)
-* **Nikhil Shankar** - *Boulder Level*
+* **Nikhil Shankar** - *Event triggers, Boulder Level*
 * **Mike McClory** - *Teleporter Level*
 
 
 ## Acknowledgments
 
-* Music from *Resistor Anthems* by Eric Skiff - [8bit Music](http://ericskiff.com/music/)  
+* Music from *Resistor Anthems* by Eric Skiff - [8bit Music](http://ericskiff.com/music/)
