@@ -1,7 +1,5 @@
 ﻿#pragma strict
 
- // FadeInOut
- 
  var fadeTexture : Texture2D;
  var fadeSpeed = 0.2;
  var drawDepth = -1000;
@@ -20,5 +18,3 @@
      
      GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), fadeTexture);
  }
-
- //http://answers.unity3d.com/questions/341350/how-to-fade-out-a-scene.html

@@ -13,19 +13,3 @@ function OnMouseUp ()
 {
 	Application.LoadLevel("Scene 1");
 }
-
-/*
-function fadeIn ()
-{
-	while (music.volume < maxVolume) {
-		music.volume += 0.1 * Time.deltaTime;
-	}
-}
-/*
-function fadeOut ()
-{
-	while (audio.volume > minVolume) {
-		audio.volume -= 0.1 * Time.deltaTime;
-	}
-}
-*/

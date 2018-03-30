@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
 var waypoint : Transform[]; //# of waypoints
-var speed : float = 0.2; //Speed
-var current : int = 0; //Current Waypoint
+var speed : float = 0.2;
+var current : int = 0;
 var reachDist : float = 0.1f; //Distance between object and waypoint
 private var ghost: CharacterController;
 
@@ -35,7 +35,7 @@ function Start () {
 function Update () {
 	var distance : float = Vector3.Distance(waypoint[current].transform.position, transform.position);
 	transform.position = Vector3.MoveTowards(transform.position, waypoint[current].transform.position, speed * Time.deltaTime);
-	if (distance < reachDist) { //Waypoint reached
+	if (distance < reachDist) {
 		current++;
 	}
 
@@ -44,7 +44,6 @@ function Update () {
 	}
 	else if (current == 1 || current == 2 || current == 5 || current == 6){
 		dir = -1;
-		//print("left");
 	}
 
 	anim.SetFloat("dir", dir);

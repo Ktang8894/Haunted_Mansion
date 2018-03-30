@@ -15,11 +15,11 @@ function Start() {
 	anim = GetComponent("Animator");
 	key = 0;
 	exit = false;
-	//inventory.key = 0
 }
 
 //Collision Detector
 function OnCollisionEnter2D(coll: Collision2D) {
+
 	//If colliding with key
 	if(coll.gameObject.tag == "Key") vicinity = true;
 	if(coll.gameObject.tag == "Boulder"){
@@ -43,9 +43,6 @@ function OnCollisionExit2D(coll:Collision2D) {
 //Movement, player interaction based on physics
 function FixedUpdate () {
 
-	//anim.SetFloat("horiz", Input.GetAxis("Horizontal"));
-	//anim.SetFloat("vert", Input.GetAxis("Vertical"));
-
 	//Movement Variables
 	if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0) {
 		moving = 1.0;
@@ -55,7 +52,6 @@ function FixedUpdate () {
 	}
 	anim.SetFloat("moving", moving);
 	anim.SetFloat("dir", lastDir);
-	//idle = true;
 
 	//Interaction Key
     if (Input.GetKey("x") ) {
@@ -80,29 +76,24 @@ function FixedUpdate () {
         lastDir = 0.0;
         idle = false;
     }
+
     if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)){
         transform.Translate(Vector2(0, -moveSpeed));
         lastDir = 1.0;
         idle = false;
     }
+
     if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)){
         transform.Translate(Vector2(-moveSpeed, 0));
         lastDir = 2.0;
         idle = false;
     }
+
     if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)){
         transform.Translate(Vector2(moveSpeed, 0));
         lastDir = 3.0;
         idle = false;
     }
-   // anim.SetInteger("Direction", lastDir);
+
     anim.SetBool("Idle", idle);
-}
-
-function LateUpdate()
-{
-	
-
-
-
 }

@@ -14,7 +14,6 @@ function Update() {
 	}
 	else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)){
 		dir = -1;
-		//print("left");
 	}
 	anim.SetFloat("dir", dir);
 }
